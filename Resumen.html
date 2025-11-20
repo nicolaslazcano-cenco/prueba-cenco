@@ -1,0 +1,81 @@
+<!--
+¿Cómo funciona Git y Github?
+Git es un sistema de control de versiones distribuido que permite a los desarrolladores rastrear cambios en el código fuente durante el desarrollo de software. 
+Fue creado por Linus Torvalds en 2005 para ayudar en el desarrollo del kernel de Linux. Git permite a múltiples desarrolladores trabajar en un proyecto simultáneamente sin interferir entre sí, ya que cada desarrollador puede tener su propia copia del repositorio.
+
+GitHub es una plataforma de alojamiento de código basada en la web que utiliza Git como sistema de control de versiones. 
+Se ha convertido en una de las plataformas más populares para el desarrollo colaborativo de software. 
+GitHub ofrece características adicionales, como la gestión de proyectos, seguimiento de problemas, revisión de código y colaboración en equipo.
+-->
+
+<!--
+¿Cómo se usa Git y Github?
+1. Instalación: Primero, debes instalar Git en tu máquina. Puedes descargarlo desde https://git-scm.com/. Luego, crea una cuenta en GitHub si aún no tienes una.
+2. Configuración: Configura Git con tu nombre de usuario y correo electrónico utilizando los siguientes comandos en la terminal:
+   git config --global user.name "Tu Nombre"
+   git config --global user.email "
+3. Crear un repositorio: Puedes crear un nuevo repositorio en GitHub a través de su interfaz web. También puedes clonar un repositorio existente utilizando el comando:
+    git clone <URL-del-repositorio>
+4. Realizar cambios: Navega al directorio del repositorio clonado y realiza los cambios necesarios en los archivos.
+5. Añadir y confirmar cambios: Después de realizar cambios, debes añadirlos al área de preparación (staging area) y luego confirmarlos (commit) con los siguientes comandos:
+   git add .
+   git commit -m "Mensaje descriptivo de los cambios"
+6. Enviar cambios a GitHub: Finalmente, envía tus cambios confirmados al repositorio remoto en GitHub utilizando el comando:
+   git push origin main
+   (Asegúrate de reemplazar "main" con el nombre de la rama correspondiente si es diferente)
+7. Colaboración: Para colaborar con otros desarrolladores, puedes crear ramas, realizar pull requests y revisar el código de tus compañeros a través de la interfaz web de GitHub
+8. Actualizar tu repositorio local: Para mantener tu repositorio local actualizado con los cambios realizados por otros colaboradores en GitHub, utiliza el comando:
+   git pull origin main
+   (Nuevamente, reemplaza "main" con el nombre de la rama correspondiente si es diferente)
+9. Resolución de conflictos: Si hay conflictos entre los cambios locales y los cambios en GitHub, Git te notificará para que resuelvas esos conflictos manualmente antes de poder confirmar y enviar tus cambios.
+-->
+
+<!--
+¿Cómo funciona GitHub y Visual Studio Code juntos?
+Visual Studio Code (VS Code) es un editor de código fuente desarrollado por Microsoft que ofrece integración con Git y GitHub. 
+Cuando se utiliza VS Code junto con GitHub, los desarrolladores pueden clonar repositorios de GitHub directamente en su entorno de desarrollo, realizar cambios en el código, y luego confirmar y enviar esos cambios de vuelta a GitHub sin salir del editor.
+VS Code proporciona una interfaz gráfica para las operaciones de Git, lo que facilita a los desarrolladores la gestión de ramas, la resolución de conflictos y la revisión de cambios.
+Además, VS Code ofrece extensiones específicas para GitHub que mejoran aún más la experiencia de desarrollo, como la capacidad de crear y revisar pull requests directamente desde el editor.
+-->
+
+
+<!--
+Proceso para usar GitHub y Visual Studio Code juntos:
+1. Instalar Visual Studio Code y Git en tu máquina. Para instalar Git, puedes descargarlo desde https://git-scm.com/.
+2. Configurar Git con tu nombre de usuario y correo electrónico utilizando los siguientes comandos en la terminal:
+   git config --global user.name "Tu Nombre"
+   git config --global user.email "     
+3. Instalar la extensión de GitHub en Visual Studio Code. Abre VS Code, ve a la pestaña de extensiones (icono de cuadrado en la barra lateral izquierda), busca "GitHub" e instala la extensión oficial de GitHub.
+4. Clonar un repositorio de GitHub: Abre VS Code y utiliza el comando "Git: Clone" desde la paleta de comandos (Ctrl+Shift+P o Cmd+Shift+P en Mac). Ingresa la URL del repositorio de GitHub que deseas clonar.
+5. Realizar cambios en el código: Navega al directorio del repositorio clonado y realiza los cambios necesarios en los archivos utilizando el editor de VS Code.
+6. Añadir y confirmar cambios: Utiliza la vista de control de versiones en VS Code (icono de rama en la barra lateral izquierda) para añadir los cambios al área de preparación (staging area) y luego confirma (commit) los cambios con un mensaje descriptivo.
+7. Enviar cambios a GitHub: Utiliza la opción "Push" en la vista de control de versiones para enviar tus cambios confirmados al repositorio remoto en GitHub.
+8. Colaboración: Puedes crear ramas, realizar pull requests y revisar el código de tus compañeros directamente desde VS Code utilizando la extensión de GitHub.     
+9. Actualizar tu repositorio local: Utiliza la opción "Pull" en la vista de control de versiones para mantener tu repositorio local actualizado con los cambios realizados por otros colaboradores en GitHub.
+    git pull origin main
+    (Nuevamente, reemplaza "main" con el nombre de la rama correspondiente si es diferente)
+-->
+
+
+<!--
+¿Cómo conectar tu proyecto local con un repositorio en GitHub?
+1. Crear un repositorio en GitHub: Ve a GitHub y crea un nuevo repositorio. No es necesario que inicialices el repositorio con un README, .gitignore o licencia, ya que lo harás desde tu proyecto local.
+2. Inicializar Git en tu proyecto local: Abre la terminal y navega al directorio de tu proyecto local. Luego, inicializa un repositorio Git con el siguiente comando:
+   git init
+3. Añadir archivos al repositorio: Añade todos los archivos de tu proyecto al área de preparación (staging area) utilizando el comando:
+   git add .
+4. Confirmar los cambios: Realiza un commit de los archivos añadidos con un mensaje descriptivo utilizando el comando:
+   git commit -m "Primer commit"        
+5. Conectar con el repositorio remoto en GitHub: Añade la URL del repositorio remoto de GitHub como un origen remoto utilizando el siguiente comando:
+   git remote add origin <URL-del-repositorio>
+6. Enviar los cambios al repositorio remoto: Finalmente, envía tus cambios confirmados al repositorio remoto en GitHub utilizando el comando:
+   git push -u origin main
+   (Asegúrate de reemplazar "main" con el nombre de la rama correspondiente si es diferente)
+7. Verificar en GitHub: Ve a tu repositorio en GitHub para verificar que los archivos de tu proyecto local se hayan subido correctamente.
+8. Para verificar qué repositorio estás utilizando, puedes usar el comando:
+   git remote -v    
+9. Para desconectar una cuenta y usar otra, puedes usar el comando:
+   git remote remove origin 
+    Luego, repite el paso 5 para conectar con el nuevo repositorio remoto.
+-->
+<!---->

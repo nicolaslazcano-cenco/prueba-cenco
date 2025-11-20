@@ -67,7 +67,7 @@ Proceso para usar GitHub y Visual Studio Code juntos:
 4. Confirmar los cambios: Realiza un commit de los archivos añadidos con un mensaje descriptivo utilizando el comando:
    git commit -m "Primer commit"        
 5. Conectar con el repositorio remoto en GitHub: Añade la URL del repositorio remoto de GitHub como un origen remoto utilizando el siguiente comando:
-   git remote add origin <URL-del-repositorio>
+   git remote add origin <URL-del-repositorio>.git
 6. Enviar los cambios al repositorio remoto: Finalmente, envía tus cambios confirmados al repositorio remoto en GitHub utilizando el comando:
    git push -u origin main
    (Asegúrate de reemplazar "main" con el nombre de la rama correspondiente si es diferente)
@@ -78,4 +78,34 @@ Proceso para usar GitHub y Visual Studio Code juntos:
    git remote remove origin 
     Luego, repite el paso 5 para conectar con el nuevo repositorio remoto.
 -->
-<!---->
+
+
+
+<!--
+¿Cómo verificar si tienes Git instalado, y una cuenta de GitHub conectada?
+1. Verificar si Git está instalado: Abre la terminal (o línea de comandos) y escribe el siguiente comando:
+   git --version
+   Si Git está instalado, verás la versión instalada. Si no está instalado, deberás descargarlo e instalarlo desde https://git-scm.com/.
+2. También es recomendado installar brew (solo para Mac) si no lo tienes ya instalado. Puedes hacerlo con el siguiente comando en la terminal:
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   Luego, puedes instalar Git usando brew con el comando:
+   brew install git
+3. Verificar la configuración de GitHub: Para verificar si tienes una cuenta de GitHub conectada, puedes revisar la configuración de Git en tu máquina. Usa los siguientes comandos para ver tu nombre de usuario y correo electrónico configurados:
+   gh auth status
+   Si no tienes instalado gh puedes instalarlo con el siguiente comando:
+   brew install gh
+4. Iniciar sesión en GitHub desde la terminal: Si no estás autenticado, puedes iniciar sesión en tu cuenta de GitHub utilizando el siguiente comando:
+   gh auth login
+5. Verificar la conexión con GitHub: Puedes probar la conexión con GitHub utilizando el siguiente comando:
+   gh repo list
+   Esto debería mostrar una lista de tus repositorios en GitHub si la conexión es exitosa.
+6. Configurar Git con tu nombre de usuario y correo electrónico si aún no lo has hecho:
+   git config --global user.name "Tu Nombre"
+   git config --global user.email "
+7. Para cambiar la cuenta de GitHub conectada, puedes usar el comando:
+   gh auth logout
+   Luego, correr los comandos de inicio de sesión nuevamente:
+   gh auth login
+   Para verificar el estado de la autenticación:
+   gh auth status
+-->

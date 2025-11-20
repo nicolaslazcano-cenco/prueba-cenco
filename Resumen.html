@@ -114,9 +114,19 @@ Proceso para usar GitHub y Visual Studio Code juntos:
 <!--
 Comandos para cambios de staging, commit, push, pull, clone, branch, merge, etc.
 1. git init: Inicializa un nuevo repositorio Git en el directorio actual.
+
 2. git clone <URL-del-repositorio>: Clona un repositorio remoto a tu máquina local.
+
 3. git add <archivo> o git add .: Añade archivos específicos o todos los archivos al área de preparación (staging area).
+Existen 3 formas de usar git add:
+   - git add <archivo>: Añade un archivo específico al área de preparación.
+   - git add .: Añade todos los archivos modificados y nuevos en el directorio actual al área de preparación.
+   - git add *: Añade todos los archivos modificados y nuevos en el directorio actual y sus subdirectorios al área de preparación.
+
 4. git commit -m "Mensaje descriptivo": Confirma los cambios añadidos al área de preparación con un mensaje descriptivo.
+Puedes enviar varios mensajes de commit en una sola línea usando:
+   git commit -m "Mensaje 1" -m "Mensaje 2" -m "Mensaje 3"
+
 5. git push origin <rama>: Envía los cambios confirmados al repositorio remoto en la rama especificada.
 6. git pull origin <rama>: Actualiza tu repositorio local con los cambios realizados en el repositorio remoto en la rama especificada.
 7. git branch: Muestra una lista de las ramas locales en el repositorio.

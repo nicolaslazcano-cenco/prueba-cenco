@@ -1,0 +1,16 @@
+h1 {
+font-size: 80px;
+color: blue;
+}
+
+h2 {
+    font-size: 50px;
+    color: green;
+    }
+
+.heading_html {
+    color: red;
+}
+#prueba_id {
+    color: orange;
+    }

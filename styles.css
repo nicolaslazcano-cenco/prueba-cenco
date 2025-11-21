@@ -6,11 +6,24 @@ color: blue;
 h2 {
     font-size: 36px;
     color: green;
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    letter-spacing: .05em;  
     }
 
 .heading_html {
     color: red;
 }
-#prueba_id {
-    color: orange;
+
+.heading_css {
+    color: green;
+    }
+
+.heading_js {
+    color: #facc14;
+    }
+
+li {
+    font-size: 20px;
+    color: purple;
     }

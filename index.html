@@ -10,11 +10,13 @@
 <body>
     <H1>Ejemplo HTML; CSS; JS Cenco</H1>
     <p>Usar HTML; CSS; y JS es mucho más sencillo de lo que uno cree, lo importante es saber qué se puede lograr con cada uno, y sus diferente funciones.</p>
+    <br>
+    <p> Más adelante podrás encontrar un <a href="#video-visual"> sobre extensiones de para visual studio code </a></p>
     <h2 class="heading_html" id="prueba_id">HTML</h2>
     <p>HTML es el lenguaje de marcado que se utiliza para estructurar el contenido en la web. Permite definir elementos como encabezados, párrafos, enlaces, imágenes y otros componentes esenciales para la creación de páginas web.</p>
-    <h2>CSS</h2>
+    <h2 class="heading_css">CSS</h2>
     <p>CSS es el lenguaje de estilos que se utiliza para describir la presentación de un documento HTML. Permite controlar el diseño, los colores, las fuentes y otros aspectos visuales        de una página web, mejorando la experiencia del usuario.</p>            
-    <h2>JavaScript</h2>
+    <h2 class="heading_js">JavaScript</h2>
     <p>JavaScript es un lenguaje de programación que se utiliza para crear interactividad en las páginas web. Permite agregar funcionalidades dinámicas, como formularios interactivos, animaciones y otros efectos que mejoran la usabilidad y la experiencia del usuario.</p> 
 
     <h2>Principales errores al programar</h2>
@@ -26,7 +28,59 @@
         <li>No utilizar un sistema de control de versiones para gestionar los cambios en el código.</li>
         <li>No seguir las mejores prácticas de codificación, lo que puede llevar a un código desorganizado y difícil de mantener.</li>
     </ul>
-    
+    <hr>
+    <h2>Recursos recomendados para aprender a programar</h2>
+    <p>A continuación, se presentan algunos recursos recomendados para aprender a programar:</p>
+    <iframe
+        id="video-visual"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/YjhkcvS1xKU&pp=ygUiYmVzdCB2aXN1YWwgc3R1ZGlvIGNvZGUgZXh0ZW5zaW9ucw%3D%3D"
+        title="Video prueba"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    ></iframe>  
+    <table>
+        <tr><!-- Filas -->
+            <th>Recurso</th> <!-- Encabezados -->
+            <th>Descripción</th>
+            <th>Otra más</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.freecodecamp.org/">freeCodeCamp</a></td>
+            <td>Plataforma en línea que ofrece cursos gratuitos de programación y desarrollo web.</td>
+            <td>Prueba</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.codecademy.com/">Codecademy</a></td>
+            <td>Plataforma interactiva que enseña a programar a través de ejercicios prácticos.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.udemy.com/">Udemy</a></td>
+            <td>Plataforma de aprendizaje en línea con una amplia variedad de cursos de programación.</td>
+            <td>Vamos</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.coursera.org/">Coursera</a></td>
+            <td>Ofrece cursos de programación impartidos por universidades y empresas reconocidas.</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <form>
+        <input type="text" id="suscribirse" name="suscribirse" value="Nombre" placeholder="Nombre">
+                        <label for="suscribirse"> Suscribirse al boletín de programación</label><br><br>
+        <input type="email" id="email" name="email" value="Correo electrónico" placeholder="Correo electrónico"><br><br>
+        <select id="nivel" name="nivel">
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>  
+        </select><br><br>
+        <input type="submit" value="Suscribirse">
+    </form>
+
     
 </body>
 </html>
